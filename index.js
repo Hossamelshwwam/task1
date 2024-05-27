@@ -9,7 +9,6 @@ const content = document.querySelector(".content");
 const contentMobile = document.querySelector(".content-mobile");
 
 function checkWindowWidth() {
-  console.log(window.innerWidth);
   if (window.innerWidth < 558) {
     content.classList.add("content-hidden");
     contentMobile.classList.remove("content-hidden");
