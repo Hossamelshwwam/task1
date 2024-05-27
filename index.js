@@ -11,7 +11,71 @@ function checkWindowWidth() {
   console.log(window.innerWidth);
   if (window.innerWidth < 556) {
     console.log(window.innerWidth);
-    // content.innerHTML = ``;
+    content.innerHTML = `      <!-- Start home Mobile -->
+    <div class="home-mobile">
+      <div class="titles">
+        <p class="main-mobile-titles">mobile</p>
+        <p class="sec-mobile-title">
+          <span class="special-word">cool</span>
+          images
+        </p>
+        <p class="description">to create any grid by scaling and resizing</p>
+        <div class="arrow-down">
+          <i class="fa-solid fa-arrow-down"></i>
+        </div>
+      </div>
+      <div class="gallery-mobile">
+        <div class="gallery-1"></div>
+        <div class="gallery-2"></div>
+        <div class="gallery-3"></div>
+        <div class="gallery-4"></div>
+        <div class="gallery-5"></div>
+        <div class="gallery-6"></div>
+        <div class="gallery-7"></div>
+        <div class="gallery-8">
+          <button class="default-button">learn more</button>
+        </div>
+      </div>
+    </div>
+    <!-- End home Mobile -->
+    <!-- Start feature mobile -->
+    <div class="feature-mobile">
+      <div class="container">
+        <div class="titles">
+          <p class="main-title">delivering good designs</p>
+          <p class="sec-title">since 1954</p>
+          <p class="decription-title">
+            we're the first multi-purpose design kit solution for businesses.
+            We help you bridge gaps between your
+          </p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <div class="icon-container">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </div>
+            <h2>swap the icon</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
+              quis eaque eos amet sit voluptate non repellendus veniam nam
+            </p>
+            <button>learn more</button>
+          </div>
+          <div class="feature">
+            <div class="icon-container">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </div>
+            <h2>swap the icon</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
+              quis eaque eos amet sit voluptate non repellendus veniam nam
+            </p>
+            <button>learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End feature mobile -->`;
     console.log("mobile");
   } else {
     content.innerHTML = `
@@ -165,7 +229,6 @@ function checkWindowWidth() {
     console.log("not mobile");
   }
 }
-
 window.addEventListener("resize", checkWindowWidth);
 
-window.addEventListener("DOMContentLoaded", checkWindowWidth);
+window.addEventListener("load", checkWindowWidth);

@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cairo", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ul {
@@ -222,6 +222,7 @@ button {
 /* Start Home */
 .home {
   padding: 60px 0 0 0;
+  
 }
 
 .home::after {
@@ -613,7 +614,7 @@ button {
 /* Start home mobile */
 
 .home-mobile {
-  padding: 40px 0 0;
+  padding: 40px 0;
   position: relative;
 }
 
@@ -632,42 +633,42 @@ button {
   width: 500px;
   height: 500px;
   background-color: #fdcb6e68;
-  top: 25%;
+  top: 10%;
   left: 100%;
   border-radius: 75px;
   transform: translate(-50%, -50%) rotate(45deg);
   z-index: -9;
 }
 
-.home-mobile .container .titles {
+.home-mobile .titles {
   text-align: center;
 }
-.home-mobile .container .titles .main-mobile-titles {
+.home-mobile .titles .main-mobile-titles {
   font-size: 80px;
   font-weight: 900;
   text-transform: capitalize;
 }
-.home-mobile .container .titles .sec-mobile-title {
+.home-mobile .titles .sec-mobile-title {
   margin-top: -40px;
   font-size: 60px;
   font-weight: 900;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
-.home-mobile .container .titles .special-word {
+.home-mobile .titles .special-word {
   text-transform: capitalize;
 }
-.home-mobile .container .titles .special-word::after {
+.home-mobile .titles .special-word::after {
   height: 20px;
   transform: translate(-50%, 50%);
 }
-.home-mobile .container .titles .description {
+.home-mobile .titles .description {
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.home-mobile .container .titles .arrow-down {
+.home-mobile .titles .arrow-down {
   margin-left: auto;
   margin-right: auto;
   width: 100px;
@@ -680,71 +681,141 @@ button {
   transition: 0.3s;
 }
 
-.home-mobile .container .titles .arrow-down i {
+.home-mobile .titles .arrow-down i {
   font-size: 35px;
   color: var(--main-color);
 }
 
-.home-mobile .container .gallery-mobile {
+.home-mobile .gallery-mobile {
+  margin-top: 40px;
   display: grid;
   gap: 5px;
   height: 700px;
-  width: 100%;
+  width: 105%;
+  transform: translateX(-2.5%);
+  margin-left: auto;
+  margin-right: auto;
   grid-template-areas:
     ". . g1 g1 g1 g1 g1 . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . ."
-    ". . . . . . . . .";
+    "g2 g2 g1 g1 g1 g1 g1 . ."
+    "g2 g2 g1 g1 g1 g1 g1 g3 g3"
+    "g2 g2 g1 g1 g1 g1 g1 g3 g3"
+    "g2 g2 g1 g1 g1 g1 g1 g3 g3"
+    "g2 g2 g4 g4 g4 g5 g5 g5 g5"
+    "g2 g2 g4 g4 g4 g5 g5 g5 g5"
+    "g2 g2 g4 g4 g4 g5 g5 g5 g5"
+    "g6 g6 g4 g4 g4 g5 g5 g5 g5"
+    "g6 g6 g4 g4 g4 g5 g5 g5 g5"
+    "g6 g6 g7 g7 g7 g5 g5 g5 g5"
+    "g6 g6 g7 g7 g7 g8 g8 g8 g8"
+    ". . g7 g7 g7 g8 g8 g8 g8"
+    ". . g7 g7 g7 . . . .";
 }
-.home-mobile .container .gallery-mobile .gallery-1 {
-  background-color: #ff7674;
+.home-mobile .gallery-mobile .gallery-1 {
+  background-color: #fdca6e;
   grid-area: g1;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
-.home-mobile .container .gallery-mobile .gallery-2 {
-  background-color: #ff7674;
+.home-mobile .gallery-mobile .gallery-2 {
+  background-color: #00b894;
   grid-area: g2;
-  border-radius: 20px;
+  border-radius: 10px;
 }
-.home-mobile .container .gallery-mobile .gallery-3 {
-  background-color: #ff7674;
+.home-mobile .gallery-mobile .gallery-3 {
+  background-color: #a19bfd;
   grid-area: g3;
-  border-radius: 20px;
+  border-radius: 10px;
 }
-.home-mobile .container .gallery-mobile .gallery-4 {
-  background-color: #ff7674;
+.home-mobile .gallery-mobile .gallery-4 {
+  background-color: #148bff;
   grid-area: g4;
-  border-radius: 20px;
+  border-radius: 10px;
 }
-.home-mobile .container .gallery-mobile .gallery-5 {
-  background-color: #ff7674;
+.home-mobile .gallery-mobile .gallery-5 {
+  background-color: #e84392;
   grid-area: g5;
-  border-radius: 20px;
+  border-radius: 10px;
 }
-.home-mobile .container .gallery-mobile .gallery-6 {
-  background-color: #ff7674;
+.home-mobile .gallery-mobile .gallery-6 {
+  background-color: #6d5ce8;
   grid-area: g6;
-  border-radius: 20px;
+  border-radius: 10px;
 }
-.home-mobile .container .gallery-mobile .gallery-7 {
+.home-mobile .gallery-mobile .gallery-7 {
   background-color: #ff7674;
   grid-area: g7;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+.home-mobile .gallery-mobile .gallery-8 {
+  grid-area: g8;
+  border-radius: 10px;
+}
+.home-mobile .gallery-mobile .gallery-8 button {
+  width: 95%;
+  background-color: black;
+  color: white;
 }
 
 /* End home mobile */
+
+/* Start feature */
+
+.feature-mobile {
+  padding: 40px 0 0;
+}
+.feature-mobile .titles {
+  margin-bottom: 50px;
+}
+.feature-mobile .titles .main-title {
+  font-size: 30px;
+  font-weight: 900;
+}
+.feature-mobile .titles .sec-title {
+  font-size: 27px;
+  font-weight: 900;
+  color: var(--main-color);
+}
+.feature-mobile .titles .decription-title {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+}
+.feature-mobile .features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.feature-mobile .features .feature {
+}
+.feature-mobile .features .feature .icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6f0b86;
+}
+.feature-mobile .features .feature .icon-container i {
+  font-size: 24px;
+  color: white;
+}
+.feature-mobile .features .feature h2 {
+}
+.feature-mobile .features .feature p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.feature-mobile .features .feature button {
+}
+.feature-mobile .features .feature button:hover {
+}
+.feature-mobile .features .feature button:active {
+}
+.feature-mobile .features .feature button:focus {
+}
+.feature-mobile .features .feature .fa-regular.fa-thumbs-up {
+}
+
+/* End feature */
