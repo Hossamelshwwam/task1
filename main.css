@@ -21,7 +21,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cairo", sans-serif;
-  overflow-x: hidden;
 }
 
 ul {
@@ -117,6 +116,10 @@ button {
   .special-word::after {
     height: 50px;
   }
+}
+
+.content-hidden {
+  display: none;
 }
 /* End Custom */
 
@@ -222,7 +225,6 @@ button {
 /* Start Home */
 .home {
   padding: 60px 0 0 0;
-  
 }
 
 .home::after {
@@ -610,6 +612,12 @@ button {
 }
 
 /* End pricing */
+
+.content,
+.content-mobile {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 /* Start home mobile */
 
